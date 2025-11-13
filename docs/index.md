@@ -7,7 +7,9 @@
 ### Description, encodings, color choices, transformations
 
 The first plot shows the total number of UFO sightings recorded in each U.S. state. I chose a **bar chart** because it clearly compares discrete regions. 
+
 The x-axis encodes the **state abbreviation** as an ordinal and categorical variable, and the y-axis encodes the **count of sightings** as a quantitative measure using count(). 
+
 I coloured each bar categorically by state so that individual bars are easier to distinguish even when there are many states along the axis.
 
 On the data side, I performed several transformations in the Python notebook. Because the CSV file did not include column headers, I manually assigned names such as `date_time`, `city`, `state`, and `shape` when reading the file. I then converted the `date_time` field to a proper datetime type with `pd.to_datetime`, dropped rows where the date could not be parsed and also filtered the dataset to include only rows where `country == "us"`. I did these cleaning steps to make sure that the state-level counts are based on valid U.S. sightings.
@@ -22,7 +24,9 @@ On the data side, I performed several transformations in the Python notebook. Be
 ### Description, encodings, color choices, transformations
 
 The second plot shows how UFO sightings have changed over time and it is grouped by the reported **shape** of the object. I used a **line chart** to emphasize trends over time. 
+
 The x-axis encodes the **year** (which I derived from the sighting date) as an ordinal variable, and the y-axis encodes the **count of sightings** as a quantitative measure. 
+
 Color encodes the UFO shape which helps the viewer to compare how different reported shapes increase or decrease over the years.
 
 For data transformations, I reused the cleaned `date_time` column and created a new `year` field by extracting the year component. I then restricted the analysis to years between 1950 and 2020 to avoid early years and to focus on the modern reporting time. To keep the chart readable, I filtered the data to only the **top 10 most frequently reported shapes** and created a subset `df_shapes` that includes those particular shapes only. These transformations helped me in reducing noise and made the multi-line time series much easier to interpret.
