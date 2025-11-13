@@ -44,9 +44,9 @@ For the second plot, I added a **dropdown selection** that lets the viewer choos
 ## Links
 
 - **The Data**  
-  [ufo-scrubbed-geocoded-time-standardized-00.csv](https://github.com/UIUC-iSchool-DataViz/is445_data/raw/main/ufo-scrubbed-geocoded-time-standardized-00.csv)
+  [Dataset Link](https://github.com/UIUC-iSchool-DataViz/is445_data/raw/main/ufo-scrubbed-geocoded-time-standardized-00.csv)
 
 - **The Analysis Notebook**  
-  [ufo_altair_hw.ipynb on GitHub](https://github.com/bhumika70/bhumika70.github.io/blob/main/ufo_altair_hw.ipynb)
+  [Notebook File on GitHub](https://github.com/bhumika70/dataviz-hw5/blob/main/ufo_altair_hw.ipynb)
 
 
