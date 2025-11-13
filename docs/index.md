@@ -1,8 +1,4 @@
----
-layout: page
-title: "UFO Sightings Visualizations"
-permalink: /ufo-visualization/
----
+# Homework 5 - Data Visualization
 
 ## Plot 1: UFO Sightings by U.S. State
 
